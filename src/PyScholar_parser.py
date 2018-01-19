@@ -5,7 +5,7 @@
 import re
 import sys
 from PyScholar_article import ScholarArticle
-#from utils import ScholarConf
+from Pyscholar_utils import ScholarConf
 
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:
