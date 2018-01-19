@@ -5,8 +5,8 @@ import optparse
 import sys
 import time
 import re
-from utils import ScholarUtils, ScholarSettings, ScholarConf, output_query, reset_res
-from query import ClusterScholarQuery, SearchScholarQuery, ScholarQuerier
+from PyScholar_utils import ScholarUtils, ScholarSettings, ScholarConf, output_query, reset_res
+from PyScholar_query import ClusterScholarQuery, SearchScholarQuery, ScholarQuerier
 import json
 import pdb
 
