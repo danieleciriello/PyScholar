@@ -5,8 +5,8 @@ import optparse
 import sys
 import time
 import re
-from utils import ScholarUtils, ScholarSettings, ScholarConf, output_query, reset_res
-from query import ClusterScholarQuery, SearchScholarQuery, ScholarQuerier
+from pyscholar.utils import ScholarUtils, ScholarSettings, ScholarConf, output_query, reset_res
+from pyscholar.query import ClusterScholarQuery, SearchScholarQuery, ScholarQuerier
 import json
 import pdb
 
@@ -47,20 +47,20 @@ def loop(options, query, querier, file_name='../res.json'):
 
 def main():
     print ""
-    usage = """scholar.py [options] <query string>
+    usage = """pyscholar.py [options] <query string>
 A command-line interface to Google Scholar.
 
 Examples:
 
 # Retrieve one article written by Einstein on quantum theory:
-scholar.py -c 1 --author "albert einstein" --phrase "quantum theory"
+python pyscholar.py -c 1 --author "albert einstein" --phrase "quantum theory"
 
 # Retrieve a BibTeX entry for that quantum theory paper:
-scholar.py -c 1 -C 17749203648027613321 --citation bt
+python pyscholar.py -c 1 -C 17749203648027613321 --citation bt
 
 # Retrieve five articles written by Einstein after 1970 where the title
 # does not contain the words "quantum" and "theory":
-scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
+python pyscholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
 
     fmt = optparse.IndentedHelpFormatter(max_help_position=50, width=100)
     parser = optparse.OptionParser(usage=usage, formatter=fmt)

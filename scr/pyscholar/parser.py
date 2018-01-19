@@ -4,8 +4,8 @@
 
 import re
 import sys
-from article import ScholarArticle
-from utils import ScholarConf
+from pyscholar.article import ScholarArticle
+from pyscholar.utils import ScholarConf
 
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:
@@ -51,7 +51,7 @@ class ScholarArticleParser(object):
         content as needed, and notifies the parser instance of
         resulting instances via the handle_article callback.
         """
-        self.soup = BeautifulSoup(html)
+        self.soup = BeautifulSoup(html, "lxml")
 
         # This parses any global, non-itemized attributes from the page.
         self._parse_globals()
