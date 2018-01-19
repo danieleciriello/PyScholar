@@ -4,8 +4,8 @@
 
 import re
 import sys
-from PyScholar_article import ScholarArticle
-from PyScholar_utils import ScholarConf
+from pyscholar.article import ScholarArticle
+from pyscholar.utils import ScholarConf
 
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:

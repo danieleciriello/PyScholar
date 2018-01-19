@@ -1,7 +1,3 @@
 eclipse.preferences.version=1
-encoding//src/PyScholar_article.py=utf8
-encoding//src/PyScholar_excepts.py=utf8
-encoding//src/PyScholar_parser.py=utf8
-encoding//src/PyScholar_query.py=utf8
-encoding//src/PyScholar_utils.py=utf8
-encoding//src/pyscholar.py=utf8
+encoding//scr/pyscholar/query.py=utf8
+encoding//scr/pyscholar/utils.py=utf8

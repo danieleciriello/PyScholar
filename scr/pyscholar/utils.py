@@ -3,7 +3,7 @@
 
 import sys
 import json
-from PyScholar_excepts import FormatError
+from pyscholar.excepts import FormatError
 
 json_results = []
 

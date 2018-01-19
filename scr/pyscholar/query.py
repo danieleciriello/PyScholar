@@ -6,9 +6,9 @@ returned results. It currently *only* processes the first results
 page. It is not a recursive crawler.
 """
 import time
-from PyScholar_utils import encode, ScholarConf, ScholarUtils 
-from PyScholar_parser import ScholarArticleParser120726
-from PyScholar_excepts import QueryArgumentError
+from pyscholar.utils import encode, ScholarConf, ScholarUtils 
+from pyscholar.parser import ScholarArticleParser120726
+from pyscholar.excepts import QueryArgumentError
 from urllib import quote, unquote
 import pdb
 from selenium import webdriver
