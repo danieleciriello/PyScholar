@@ -5,8 +5,8 @@ import optparse
 import sys
 import time
 import re
-from utils import ScholarUtils, ScholarSettings, ScholarConf, output_query, reset_res
-from query import ClusterScholarQuery, SearchScholarQuery, ScholarQuerier
+from PyScholar_utils import ScholarUtils, ScholarSettings, ScholarConf, output_query, reset_res
+from PyScholar_query import ClusterScholarQuery, SearchScholarQuery, ScholarQuerier
 import json
 import pdb
 
@@ -47,7 +47,7 @@ def loop(options, query, querier, file_name='../res.json'):
 
 def main():
     print ""
-    usage = """scholar.py [options] <query string>
+    usage = """pyscholar.py [options] <query string>
 A command-line interface to Google Scholar.
 
 Examples:

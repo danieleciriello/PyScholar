@@ -6,9 +6,9 @@ returned results. It currently *only* processes the first results
 page. It is not a recursive crawler.
 """
 import time
-from utils import ScholarConf, ScholarUtils, encode
-from parser import ScholarArticleParser120726
-from excepts import QueryArgumentError
+from PyScholar_utils import encode, ScholarConf, ScholarUtils 
+from PyScholar_parser import ScholarArticleParser120726
+from PyScholar_excepts import QueryArgumentError
 from urllib import quote, unquote
 import pdb
 from selenium import webdriver
@@ -465,5 +465,6 @@ class ScholarQuerier(object):
     def quit(self):
         if path.exists(FF_PROFILE_PATH):
             rmtree(FF_PROFILE_PATH)
-        copytree(self.firefox.profile.path, FF_PROFILE_PATH)
+            copytree(self.firefox.profile.path, FF_PROFILE_PATH)
+        #copytree(self.firefox.profile.path, FF_PROFILE_PATH)
         self.firefox.quit()
