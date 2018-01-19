@@ -465,5 +465,6 @@ class ScholarQuerier(object):
     def quit(self):
         if path.exists(FF_PROFILE_PATH):
             rmtree(FF_PROFILE_PATH)
-        copytree(self.firefox.profile.path, FF_PROFILE_PATH)
+            copytree(self.firefox.profile.path, FF_PROFILE_PATH)
+        #copytree(self.firefox.profile.path, FF_PROFILE_PATH)
         self.firefox.quit()

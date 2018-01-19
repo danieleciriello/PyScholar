@@ -47,7 +47,7 @@ def loop(options, query, querier, file_name='../res.json'):
 
 def main():
     print ""
-    usage = """scholar.py [options] <query string>
+    usage = """pyscholar.py [options] <query string>
 A command-line interface to Google Scholar.
 
 Examples:
